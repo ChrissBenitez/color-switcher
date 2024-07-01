@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Responsive Web Developer Starter - devchallenges.io</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="any">
-</head>
-<body>
-    <header>
-        <div class="get-started">Get started by editting <b>index.html</b></div>
-        <img class="logo" src="images/logo.svg" alt="Main Logo">
-    </header>
 
-    <main>
-        <img src="images/devchallenges-logo.svg" alt="A beautiful landscape">
-        <h3 class="title">Responsive Web Developer Starter</h3>
-    </main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Responsive Web Developer Starter - devchallenges.io</title>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="any">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    </head>
 
-    <footer>
-        <a class="link-card" href="https://devchallenges.io/" target="_blank">
-            <div class="link-title">Challenges</div>
-            <div class="link-description">Choose a challenge and start learning by building real-life projects.</div>
-        </a>
+    <body>
+        <header class="header">
+            <div class="logo"><img id="logo" src="/images/logo.svg" alt=""></div>
+            <div class="menu"><a href="">About us</a><a href="">Product</a><a href="">Ressource</a><a
+                    href="">Contact</a></div>
+            <label class="switch">
+                <input name="change-color" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </header>
 
-        <a class="link-card" href="https://devchallenges.io/challenges" target="_blank">
-            <div class="link-title">Solutions</div>
-            <div class="link-description">Checkout how orders solve the challenges, compare with yours and give them feedback.</div>
-        </a>
+        <main>
+            <div class="intro">
+                <div class="intro-left">
+                    <p class="intro-text">😎 Simple way to communicate</p>
+                    <h1>Actions for Accessibility in Design</h1>
+                    <p class="slogan">The fastest way to build and deploy websites with resusable components.</p>
+                    <div class="ctas">
+                        <a href="" class="btn">Get started</a>
+                        <a class="underlined-link" href="">Get live demo</a>
+                    </div>
+                    <div class="check">
+                        <p> <img src="/images/check.svg" alt="">No credit card required</p>
+                        <p> <img src="/images/check.svg" alt="">No software to install</p>
+                    </div>
+                </div>
+                <div class="intro-right">
+                    <img class="hero-image" src="images/hero-image-simple-homepage.png" alt="">
+                </div>
+            </div>
+        </main>
+        <script>
+            let root = document.querySelector(":root");
+            let button = document.querySelector("input[name=change-color]");
 
-        <a class="link-card" href="https://devchallenges.io/" target="_blank">
-            <div class="link-title">Blogs</div>
-            <div class="link-description">Checkout devchallenges blogs, tutorials, updates. Find useful resources to get you started.</div>
-        </a>
+            button.addEventListener('change', () => {
+                event.preventDefault();
+                root.classList.toggle('dark');
 
-        <a class="link-card" href="https://devchallenges.io/" target="_blank">
-            <div class="link-title">Deploy</div>
-            <div class="link-description">How to deploy and submit your solution.</div>
-        </a>
-       
-    </footer>
+                if (root.classList == "dark") {
+                    document.getElementById("logo").src = "../images/logo-dark.svg";
+                }
+                else {
+                    document.getElementById("logo").src = "../images/logo.svg";
+                }
+            })
+        </script>
+    </body>
 
-    <script src="script.js"></script>
-</body>
 </html>

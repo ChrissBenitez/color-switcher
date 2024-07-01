@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="sun-on" transform="translate(-2 -2)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="4" cy="4" r="4" transform="translate(8 8)"/>
+    <path id="Tracé_211" data-name="Tracé 211" class="cls-2" d="M12,5V3"/>
+    <path id="Tracé_212" data-name="Tracé 212" class="cls-2" d="M12,21V19"/>
+    <path id="Tracé_213" data-name="Tracé 213" class="cls-2" d="M16.95,7.05l1.414-1.414"/>
+    <path id="Tracé_214" data-name="Tracé 214" class="cls-2" d="M5.636,18.364,7.05,16.95"/>
+    <path id="Tracé_215" data-name="Tracé 215" class="cls-2" d="M19,12h2"/>
+    <path id="Tracé_216" data-name="Tracé 216" class="cls-2" d="M3,12H5"/>
+    <path id="Tracé_217" data-name="Tracé 217" class="cls-2" d="M16.95,16.95l1.414,1.414"/>
+    <path id="Tracé_218" data-name="Tracé 218" class="cls-2" d="M5.636,5.636,7.05,7.05"/>
+  </g>
+</svg>
