@@ -186,10 +186,10 @@ header {
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  background-image: url(images/sun-on.svg);
+  background-image: url(../images/sun-on.svg);
 }
 .dark .slider:before {
-  background-image: url(images/sun-off.svg);
+  background-image: url(../images/sun-off.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -215,13 +215,13 @@ input:checked + .slider:before {
 .slider.round {
   border-radius: 34px;
   background-color: #223344;
-  background-image: url("images/moon-off.svg");
+  background-image: url("../images/moon-off.svg");
   background-repeat: no-repeat;
   background-position: 32px center;
 }
 .dark .slider.round {
   background-color: white;
-  background-image: url("images/moon-on.svg");
+  background-image: url("../images/moon-on.svg");
   background-position: left;
 }
 
