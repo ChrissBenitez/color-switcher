@@ -17,12 +17,23 @@
     <body>
         <header class="header">
             <div class="logo"><img id="logo" src="images/logo.svg" alt=""></div>
-            <div class="menu"><a href="">About us</a><a href="">Product</a><a href="">Ressource</a><a
-                    href="">Contact</a></div>
-            <label class="switch">
-                <input name="change-color" type="checkbox">
-                <span class="slider round"></span>
-            </label>
+            <div id="menu" class="menu">
+                <a href="">About us</a>
+                <a href="">Product</a>
+                <a href="">Ressource</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="menu-right">
+                <label class="switch">
+                    <input name="change-color" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <div id="menu-mobile" class="menu-mobile">
+                    <div class="menu-mobile-dash"></div>
+                    <div class="menu-mobile-dash"></div>
+                    <div class="menu-mobile-dash"></div>
+                </div>
+            </div>
         </header>
 
         <main>
@@ -48,6 +59,8 @@
         <script>
             let root = document.querySelector(":root");
             let button = document.querySelector("input[name=change-color]");
+            let menuMobile = document.getElementById("menu-mobile");
+            let menu = document.getElementById("menu");
 
             button.addEventListener('change', () => {
                 event.preventDefault();
@@ -59,6 +72,10 @@
                 else {
                     document.getElementById("logo").src = "images/logo.svg";
                 }
+            })
+
+            menuMobile.addEventListener('click', () => {
+                menu.classList.toggle('show-menu');
             })
         </script>
     </body>
